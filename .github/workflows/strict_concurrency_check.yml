@@ -32,7 +32,7 @@ concurrency:
 
 jobs:
   strict-concurrency:
-    runs-on: macos-26
+    runs-on: namespace-profile-wikipedia-ios-mac
     permissions:
       actions: read
       contents: read
@@ -49,6 +49,14 @@ jobs:
       - name: Select Xcode
         run: |
           sudo xcode-select -switch "/Applications/Xcode_${XCODE_VERSION}.app"
+
+      - name: Cache
+        uses: namespacelabs/nscloud-cache-action@v1
+        with:
+          cache: |
+            swiftpm
+            xcode
+            cocoapods
 
       - name: Prepare simulator
         id: simulator
