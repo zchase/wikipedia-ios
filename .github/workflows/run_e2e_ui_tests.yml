@@ -43,6 +43,10 @@ jobs:
           gh release view "$SELECTED_REF_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null
           echo "Verified GitHub release tag: $SELECTED_REF_NAME"
 
+      - name: Install xpretty
+        run: |
+          gem install xcpretty
+
       - name: Check out selected ref
         uses: actions/checkout@v7
 

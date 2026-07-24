@@ -28,6 +28,10 @@ jobs:
 
     name: Test ${{ matrix.scheme }}
     steps:
+      - name: Install xpretty
+        run: |
+          gem install xcpretty
+
       - uses: actions/checkout@v7
 
       - name: Select Xcode
