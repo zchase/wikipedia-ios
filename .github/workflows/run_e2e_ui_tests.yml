@@ -11,8 +11,8 @@ permissions:
   contents: read
 
 env:
-  XCODE_VERSION: "26.6"
-  IOS_VERSION: "26.6"
+  XCODE_VERSION: "26.5"
+  IOS_VERSION: "26.5"
   SIMULATOR_NAME: "iPhone 17"
   UI_TEST_CONFIGURATION: "English (Light, E2E)"
   E2E_SMOKE_TEST_LIST: "WikipediaUITests/E2ESmokeTests.txt"

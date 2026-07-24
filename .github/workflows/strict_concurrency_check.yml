@@ -19,8 +19,8 @@ on:
   workflow_dispatch:
 
 env:
-  XCODE_VERSION: "26.6"
-  IOS_VERSION: "26.6"
+  XCODE_VERSION: "26.5"
+  IOS_VERSION: "26.5"
   SIMULATOR_NAME: "iPhone 17"
   # Schemes that have completed their strict-concurrency burn-down. These are built
   # with warnings-as-errors so any regression fails CI. Space-separated.
