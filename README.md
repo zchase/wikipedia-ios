@@ -1,7 +1,7 @@
 # Wikipedia iOS
 The official Wikipedia iOS app.
 
-run again
+run again and again
 
 [![Wikipedia](https://circleci.com/gh/wikimedia/wikipedia-ios.svg?style=shield)](https://github.com/wikimedia/wikipedia-ios)
 [![MIT license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/wikimedia/wikipedia-ios/main/LICENSE.txt)
