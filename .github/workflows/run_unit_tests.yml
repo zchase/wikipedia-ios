@@ -38,6 +38,14 @@ jobs:
         run: |
           sudo xcode-select -switch "/Applications/Xcode_${XCODE_VERSION}.app"
 
+      - name: Cache
+        uses: namespacelabs/nscloud-cache-action@v1
+        with:
+          cache: |
+            swiftpm
+            xcode
+            cocoapods
+
       - name: Prepare simulator
         id: simulator
         uses: ./.github/actions/prepare-simulator
